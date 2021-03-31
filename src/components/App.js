@@ -1,10 +1,10 @@
-import FirstSample from "./FirstSample";
+import GltfLoaderSample from "./GltfLoaderSample";
 
 function App() {
   return (
     <div className="App">
       <h1>Learn react-three-fiber</h1>
-      <FirstSample />
+      <GltfLoaderSample />
     </div>
   );
 }
