@@ -1,6 +1,7 @@
 // import FirstSample from "./FirstSample";
 // import SecondSample from "./SecondSample";
-import ThirdSample from "./ThirdSample";
+// import ThirdSample from "./ThirdSample";
+import FourthSample from "./FourthSample";
 // import GltfLoaderSample from "./GltfLoaderSample";
 // import SpringSample from "./SpringSample";
 // import CloudEffect from "./CloudEffect";
@@ -17,7 +18,8 @@ function App() {
     <Home className="App">
       {/* <FirstSample /> */}
       {/* <SecondSample /> */}
-      <ThirdSample />
+      {/* <ThirdSample /> */}
+      <FourthSample />
       {/* <GltfLoaderSample /> */}
       {/* <SpringSample /> */}
       {/* <CloudEffect /> */}
