@@ -21,6 +21,6 @@ npm install three react-three-fiber
 ## Todo List
 
 - [x] react-three-fiber 기본 샘플 - 큐브 2개
-- [ ] npmjs에 있는 샘플 2개 구현
-- [ ] gltf 로드하기
+- [x] npmjs에 있는 샘플 2개 구현
+- [x] gltf 로드하기
 - [ ] hdr 등 캔버스 배경 로드하기

@@ -1,10 +1,11 @@
 // import FirstSample from "./FirstSample";
 // import SecondSample from "./SecondSample";
 // import ThirdSample from "./ThirdSample";
-import FourthSample from "./FourthSample";
+// import FourthSample from "./FourthSample";
 // import GltfLoaderSample from "./GltfLoaderSample";
 // import SpringSample from "./SpringSample";
 // import CloudEffect from "./CloudEffect";
+import CloneCoding from "./clone-coding";
 
 import styled from "styled-components";
 
@@ -19,10 +20,11 @@ function App() {
       {/* <FirstSample /> */}
       {/* <SecondSample /> */}
       {/* <ThirdSample /> */}
-      <FourthSample />
+      {/* <FourthSample /> */}
       {/* <GltfLoaderSample /> */}
       {/* <SpringSample /> */}
       {/* <CloudEffect /> */}
+      <CloneCoding />
     </Home>
   );
 }
