@@ -1,17 +1,25 @@
 // import FirstSample from "./FirstSample";
-// import SecondSample from "./SecondSample";
+import SecondSample from "./SecondSample";
 // import GltfLoaderSample from "./GltfLoaderSample";
-import SpringSample from "./SpringSample";
+// import SpringSample from "./SpringSample";
+// import CloudEffect from "./CloudEffect";
+
+import styled from "styled-components";
+
+const Home = styled.div`
+  width: 100%;
+  height: 100vh;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <h1>Learn react-three-fiber</h1>
+    <Home className="App">
       {/* <FirstSample /> */}
-      {/* <SecondSample /> */}
+      <SecondSample />
       {/* <GltfLoaderSample /> */}
-      <SpringSample />
-    </div>
+      {/* <SpringSample /> */}
+      {/* <CloudEffect /> */}
+    </Home>
   );
 }
 
