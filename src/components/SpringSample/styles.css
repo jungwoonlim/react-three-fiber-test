@@ -1,0 +1,40 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+  }
+  .box {
+    width: 300px;
+  }
+  
+  .box > h1 {
+    font-size: 20px;
+    margin: 0 0 1rem 0;
+    padding-top: 15px;
+    text-align: center;
+    /* border: solid 1px; */
+    border-radius: 5px;
+    height: 100px;
+    background: gray;
+  }
+  .container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #a9a9a9;
+  }
+  .Intro {
+    font-size: 20px;
+  }
+  
+  .button {
+    background: #4e4b4b;
+  }
+  .button-container {
+    position: absolute;
+    bottom: 0;
+  }
+  
