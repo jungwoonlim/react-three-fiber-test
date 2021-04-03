@@ -5,7 +5,8 @@
 // import GltfLoaderSample from "./GltfLoaderSample";
 // import SpringSample from "./SpringSample";
 // import CloudEffect from "./CloudEffect";
-import CloneCoding from "./clone-coding";
+// import CloneCoding from "./clone-coding";
+import MyCode from "./my-code";
 
 import styled from "styled-components";
 
@@ -24,7 +25,8 @@ function App() {
       {/* <GltfLoaderSample /> */}
       {/* <SpringSample /> */}
       {/* <CloudEffect /> */}
-      <CloneCoding />
+      {/* <CloneCoding /> */}
+      <MyCode />
     </Home>
   );
 }
