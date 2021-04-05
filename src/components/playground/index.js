@@ -1,14 +1,8 @@
-import React, { useRef, useState, Suspense } from "react";
+import React, { useRef, Suspense } from "react";
 import "./index.scss";
-//Components
 import { Section } from "./section";
-
-// R3F
 import { Canvas, useFrame } from "react-three-fiber";
-import { useProgress, useGLTF, Sky } from "@react-three/drei";
-
-// React Spring
-import { a, useTransition } from "@react-spring/web";
+import { useGLTF, Sky } from "@react-three/drei";
 import { Vector3 } from "three";
 
 const Lights = () => {
@@ -53,30 +47,7 @@ const Content = ({ modelPath, position }) => {
   );
 };
 
-// Loading progress bar
-function Loader() {
-  const { active, progress } = useProgress();
-  const transition = useTransition(active, {
-    from: { opacity: 1, progress: 0 },
-    leave: { opacity: 0 },
-    update: { progress },
-  });
-  return transition(
-    ({ progress, opacity }, active) =>
-      active && (
-        <a.div className="loading" style={{ opacity }}>
-          <div className="loading-bar-container">
-            <a.div className="loading-bar" style={{ width: progress }}></a.div>
-          </div>
-        </a.div>
-      )
-  );
-}
-
 export default function App() {
-  const [events] = useState();
-  const scrollArea = useRef();
-
   return (
     <>
       {/* R3F Canvas */}
@@ -85,15 +56,12 @@ export default function App() {
         colorManagement
         camera={{ position: [0, 0, 120], fov: 70 }}
       >
-        {/* Lights Component */}
         <Sky sunPosition={new Vector3(100, 10, 100)} />
         <Lights />
         <Suspense fallback={null}>
           <Content modelPath="./scene.glb" position={300}></Content>
         </Suspense>
       </Canvas>
-      <Loader />
-      <div className="scrollArea" ref={scrollArea} {...events}></div>
     </>
   );
 }

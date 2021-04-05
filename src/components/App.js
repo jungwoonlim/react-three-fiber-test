@@ -6,7 +6,10 @@
 // import SpringSample from "./SpringSample";
 // import CloudEffect from "./CloudEffect";
 // import CloneCoding from "./clone-coding";
-import MyCode from "./my-code";
+// import Playground from "./playground";
+// import MoreSample from "./MoreSample";
+import TextureLoader from "./TextureLoader";
+// import MyCode from "./my-code";
 
 import styled from "styled-components";
 
@@ -26,7 +29,9 @@ function App() {
       {/* <SpringSample /> */}
       {/* <CloudEffect /> */}
       {/* <CloneCoding /> */}
-      <MyCode />
+      {/* <Playground /> */}
+      <TextureLoader />
+      {/* <MyCode /> */}
     </Home>
   );
 }
